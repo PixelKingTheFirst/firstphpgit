@@ -1,6 +1,11 @@
 <?php
     require_once "Db.php";
     class CMS {
+
+        static function seyHello() {
+            echo "Hello World";
+        }
+
         static function getContent($id_key) {
             $language = isset($_COOKIE["language"]) ? $_COOKIE["language"] : "en";
             
